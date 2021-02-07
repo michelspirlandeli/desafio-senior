@@ -1,0 +1,14 @@
+version: '3.1'
+services:
+  db:
+    image: mysql
+    container_name: mysql_senior
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+    - "3306:3306"
+    volumes:
+    - senior_data:/var/lib/mysql
+
+volumes:
+  senior_data:

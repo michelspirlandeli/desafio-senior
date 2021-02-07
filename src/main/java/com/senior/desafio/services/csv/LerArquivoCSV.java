@@ -23,6 +23,7 @@ public class LerArquivoCSV {
 	
 	public LerArquivoCSV(CidadesRepository cidadesRepository) throws IOException {
         this.cidadesRepository = cidadesRepository;
+        this.lerArquivo();
 	}
 	
 	public boolean lerArquivo() throws IOException {
