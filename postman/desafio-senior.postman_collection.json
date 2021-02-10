@@ -1,0 +1,158 @@
+{
+	"variables": [],
+	"info": {
+		"name": "desafio-senior",
+		"_postman_id": "4c859da4-1ec3-69c7-a70a-8edace54dea3",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1- list all",
+			"request": {
+				"url": "localhost:8090/api/cidades",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "2 - list capital",
+			"request": {
+				"url": "localhost:8090/api/cidades/capital",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "5 - dados da cidade id do IBGE",
+			"request": {
+				"url": "localhost:8090/api/cidades/3516200",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "4 - list qtd de cidades por estados",
+			"request": {
+				"url": "localhost:8090/api/cidades/count/estado/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "9 - Permitir selecionar uma coluna (do CSV)",
+			"request": {
+				"url": "localhost:8090/api/cidades/find/uf/sp",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "12 - list Distancia Localizacao",
+			"request": {
+				"url": "localhost:8090/api/cidades/localizacao/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "7 - create cidades",
+			"request": {
+				"url": "localhost:8090/api/cidades/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ibgeId\": 3516200,\n    \"uf\": \"SP\",\n    \"name\": \"Franca\",\n    \"capital\": \"\",\n    \"longitude\": \"-47.4197 20° 32\",\n    \"latitude\": \"-20.5418\",\n    \"noAccents\": \"Franca\",\n    \"alternativeNames\": \"\",\n    \"microregion\": \"Sao Paulo\",\n    \"mesoregion\": \"Ribeirao Preto\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "8 - delete cidades",
+			"request": {
+				"url": "localhost:8090/api/cidades/0",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "6 - list cidades por Uf",
+			"request": {
+				"url": "localhost:8090/api/cidades/estado/rj",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "11 - total registro",
+			"request": {
+				"url": "localhost:8090/api/cidades/countTotal/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "3 - Retornar o nome do estado maior e menor cidade",
+			"request": {
+				"url": "localhost:8090/api/cidades/estado/quantidade/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "10. Retornar a quantidade de registro baseado em uma coluna",
+			"request": {
+				"url": "localhost:8090/api/cidades/coluna/uf/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
